@@ -1,8 +1,9 @@
 import React from "react";
+import todoitems from "./TodoItems.module.css";
 
-const TodoItems = () => {
+const TodoItems = (props) => {
     return (
-        <div>TodoItems</div>
+        <li className={todoitems.todoitem}>{props.title}</li>
     )
 }
 
